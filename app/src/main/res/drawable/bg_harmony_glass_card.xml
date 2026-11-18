@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- HarmonyOS 7 Specular Rim Gradient Border -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:centerColor="@color/cyber_border_subtle"
+                android:endColor="@color/cyber_rim_highlight"
+                android:startColor="@color/cyber_rim_highlight" />
+            <corners android:radius="26dp" />
+        </shape>
+    </item>
+    <!-- Frosted Glass Multi-Layer Fill -->
+    <item
+        android:bottom="1.25dp"
+        android:left="1.25dp"
+        android:right="1.25dp"
+        android:top="1.25dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="145"
+                android:endColor="@color/cyber_glass_fill"
+                android:startColor="@color/cyber_glass_fill_alt" />
+            <corners android:radius="24.75dp" />
+        </shape>
+    </item>
+</layer-list>

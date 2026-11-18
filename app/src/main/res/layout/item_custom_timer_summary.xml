@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardCustomItem"
+    style="@style/Widget.Chronos.HarmonyGlassCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/cyber_surface_glass"
+    app:cardCornerRadius="22dp"
+    app:strokeColor="@color/cyber_border_subtle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="12dp">
+
+        <!-- 3-State Cyclic Habit Checkbox (1: Completed, 2: Incomplete, 3: Reset/Null) -->
+        <ImageButton
+            android:id="@+id/btnHabitCycle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Ciclar estado del hábito"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_habit_none"
+            app:tint="@color/cyber_text_secondary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewStatusDot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_overlay_orb" />
+
+                <TextView
+                    android:id="@+id/tvCustomName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/orbitron"
+                    android:maxLines="1"
+                    android:text="PROTOCOLO ALPHA"
+                    android:textColor="@color/cyber_text_primary"
+                    android:textSize="13.5sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/pillDimensionAnchor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_harmony_anchor_pill"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="7dp"
+                    android:paddingVertical="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivCustomAnchorIcon"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:layout_marginEnd="4dp"
+                        android:contentDescription="Dimensión anclada"
+                        android:src="@drawable/ic_anchor_node"
+                        app:tint="@color/neon_cyan" />
+
+                    <TextView
+                        android:id="@+id/tvCustomDimensionBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jetbrains_mono"
+                        android:text="MENTAL"
+                        android:textColor="@color/neon_cyan"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCustomActivationStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/jetbrains_mono"
+                android:text="> SE ACTIVA EN: 09:00"
+                android:textColor="@color/neon_cyan"
+                android:textSize="10.5sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCustomSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/rajdhani"
+                android:text="45 min · Diario · L M X J V"
+                android:textColor="@color/cyber_text_secondary"
+                android:textSize="12.5sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCustomCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_harmony_capsule_btn"
+            android:fontFamily="@font/jetbrains_mono"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="00:45:00"
+            android:textColor="@color/neon_cyan"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- HarmonyOS 7 Geometric Node Anchor + Temporal Link -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M12,3.5A2.5,2.5 0,1 1,9.5 6,2.5 2.5,0 0,1 12,3.5Z"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="1.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M12,8.5V19.5M6.5,14.5C6.5,17.8 8.9,20 12,20C15.1,20 17.5,17.8 17.5,14.5"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="1.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M5,14.5L6.5,13L8,14.5M16,14.5L17.5,13L19,14.5M9.5,11.5H14.5"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="1.7" />
+</vector>

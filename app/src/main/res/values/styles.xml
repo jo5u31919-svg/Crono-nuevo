@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- HarmonyOS 7 Spatial Glass + Prince of Persia (Dagas del Tiempo - PS5 Cinematic VFX) -->
+    <style name="Widget.Chronos.HarmonyGlassCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">26dp</item>
+        <item name="cardElevation">10dp</item>
+        <item name="cardMaxElevation">14dp</item>
+        <item name="strokeWidth">1.25dp</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/cyber_rim_highlight</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/cyber_rim_highlight</item>
+    </style>
+
+    <style name="Widget.Chronos.SandsCard" parent="Widget.Chronos.HarmonyGlassCard">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">14dp</item>
+        <item name="cardMaxElevation">18dp</item>
+        <item name="strokeWidth">1.5dp</item>
+    </style>
+
+    <style name="Widget.Chronos.DimensionCard" parent="Widget.Chronos.HarmonyGlassCard">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">12dp</item>
+        <item name="cardMaxElevation">16dp</item>
+        <item name="strokeWidth">1.3dp</item>
+    </style>
+
+    <style name="Widget.Chronos.DaggerButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">24dp</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:fontFamily">@font/orbitron</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Chronos.HarmonyPill" parent="">
+        <item name="android:fontFamily">@font/jetbrains_mono</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:paddingVertical">4dp</item>
+    </style>
+
+    <style name="TextAppearance.Chronos.DaggerTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">@font/orbitron</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
